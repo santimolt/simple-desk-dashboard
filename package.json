@@ -3,12 +3,22 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint . --fix",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "astro": "^5.17.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.21.0",
+    "astro-eslint-parser": "^0.15.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-astro": "^0.31.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
